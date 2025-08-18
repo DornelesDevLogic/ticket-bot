@@ -1,0 +1,31 @@
+ticket-bot/
+├── api-logidoc/                            # Usado para definir o login do robô na api logidoc
+│   ├── __tests__/                              # Testes unitários da api (npm test)
+│   ├── services/                               # Funcionalidades da api que usamos
+│   │   ├── auth.js                             # Autenticar
+│   │   └── getFilaCliente.js                   # Retornar a fila de um cliente
+│   ├── client.js
+│   └── index.js
+├── client/                                 # Frontend da avaliação de usuários (React + typescript)
+├── config/                                 # Configurar a conexão com o banco de dados
+│   └── database.js
+├── controllers/                            # Lógica:
+│   ├── handleAdminMessage.js                   # Mensagem do admin para entrar/sair de modo manutenção
+│   ├── handleUserMessages.js                   # Fluxo de mensagens do robô
+│   └── ticketClosedListener.js                 # Listener do banco de dados com trigger para enviar avaliação
+├── docs/
+├── queries/                                # Tabelas e triggers usadas pelo robô
+├── routes/
+│   ├── avaliacao.js                        # Postar avaliação de usuário
+│   └── webhook.js                          # Responder mensagem de usuário
+├── services/
+│   ├── messages.js                         # Definição dos textos das mensagens
+│   ├── postRating.js                       # Envio de avaliação para o banco
+│   ├── sendMessage.js                      # Envio de mensagem para a api da plataforma
+│   └── token.js                            # Funções de codificar e decodificar tokens (para autenticação bearer)
+├── utils/
+│   └── maintenance.js                      # Definição do modo manutenção (robô desativado)
+├── babel.config.cjs                        # Para converter linguagem nos testes unitários
+├── index.js
+├── jest.config.cjs                         # Para testes unitários
+└── logicbox-nota                           # [externo] Configurações do nginx para o robô

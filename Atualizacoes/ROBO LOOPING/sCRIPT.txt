@@ -1,0 +1,5 @@
+ALTER TABLE ticketbotposition
+ADD COLUMN menu_sent_count SMALLINT DEFAULT 0;
+
+ALTER TABLE ticketbotposition
+ADD COLUMN menu_block_until TIMESTAMP WITH TIME ZONE;
