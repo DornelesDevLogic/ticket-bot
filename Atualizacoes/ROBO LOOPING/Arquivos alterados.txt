@@ -1,0 +1,18 @@
+c:\Users\mobil\Projetos\ticket-bot\controllers\handleUserMessages.js
+c:\Users\mobil\Projetos\ticket-bot\controllers\ticketClosedListener.js
+c:\Users\mobil\Projetos\ticket-bot\client\vite.config.ts
+c:\Users\mobil\Projetos\ticket-bot\client\eslint.config.js
+
+
+
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   controllers/handleAdminMessage.js
+        modified:   controllers/handleUserMessages.js
+        modified:   controllers/ticketClosedListener.js
+        modified:   index.js
+        modified:   routes/webhook.js
+
+
