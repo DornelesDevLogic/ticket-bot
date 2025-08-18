@@ -48,7 +48,7 @@ const listenTicketClosed = async () => {
       // O wa_id original (com sufixo) é mantido para o envio da mensagem.
       const normalizedWaId = wa_id.split('@')[0];
 
-      // Verifica se o usuário está bloqueado por excesso de tentativas commit teste
+      // Verifica se o usuário está bloqueado por excesso de tentativass
       const userStatusResult = await client.query(
         'SELECT menu_block_until FROM ticketbotposition WHERE wa_id = $1',
         [normalizedWaId]
